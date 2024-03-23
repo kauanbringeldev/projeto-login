@@ -36,6 +36,9 @@ section#Login {
     height: 500px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.500);
+
+    transition: width 0.4s, height 0.4s;
+    -o-transition-timing-function: ease;
 }
 
 #imagem {
