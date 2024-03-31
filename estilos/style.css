@@ -29,15 +29,15 @@ section#Login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
-
+    
     background-color: white;
     width: 250px;
     height: 505px;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.500);
-
+    transform: translate(-50%, -50%);
+    
     transition: width 0.4s, height 0.4s;
     transition-timing-function: ease;
 }
@@ -63,17 +63,44 @@ div#formulario>h1 {
 div#formulario>p {
     font-size: 0.8em;
 }
-.campo{
-    display:block;
+
+.campo {
+    display: block;
     background-color: #5f2c82;
+    border: 2px solid #5f2c82;
     width: 100%;
-    height:40px;
-    border-radius: 5px;
+    height: 40px;
+    border-radius: 8px;
     margin: 5px 0;
 }
-.campo > label {
+
+.campo>label {
     display: none;
 }
+
+.campo>span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px 0;
+}
+
+.campo>input {
+    background-color: #68f1ed;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform: translateY(-12px);
+}
+
+.campo>input:focus-within {
+    background-color: white;
+    border: none;
+}
+
 .entrar {
     display: block;
     font-size: 1em;
@@ -93,6 +120,7 @@ div#formulario>p {
 .botao {
     display: block;
     text-align: center;
+    justify-content: center;
     font-size: 1em;
     width: 100%;
     height: 40px;
@@ -104,9 +132,11 @@ div#formulario>p {
     border-radius: 7px;
     text-decoration: none;
 }
+
 .botao:hover {
     background-color: #70fffa;
 }
-.botao > span {
+
+.botao>span {
     font-size: 0.9em;
 }
